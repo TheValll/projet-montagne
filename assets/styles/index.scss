@@ -1,0 +1,15 @@
+@import "./settings";
+@import "../styles/layouts/header";
+@import "../styles/components/button";
+@import "../styles/layouts/topic1";
+@import "../styles/layouts/topics";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: url(../img/bg.jpg) center/cover fixed;
+}
