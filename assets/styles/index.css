@@ -18,7 +18,16 @@ header .title_container {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  padding-top: 150px;
+}
+@media screen and (max-width: 1150px) {
+  header .title_container {
+    padding-top: 300px;
+  }
+}
+@media screen and (max-width: 690px) {
+  header .title_container {
+    padding-top: 50px;
+  }
 }
 header .title_container h1 {
   text-transform: uppercase;
@@ -29,11 +38,33 @@ header .title_container h1 {
   line-height: 90px;
   font-family: Inter;
 }
+@media screen and (max-width: 1150px) {
+  header .title_container h1 {
+    font-size: 3rem;
+    line-height: 60px;
+  }
+}
+@media screen and (max-width: 690px) {
+  header .title_container h1 {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+}
 header .title_container p {
   margin: 30px auto;
   font-family: Light;
   font-style: italic;
   letter-spacing: 2px;
+}
+@media screen and (max-width: 1150px) {
+  header .title_container p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 690px) {
+  header .title_container p {
+    font-size: 0.6rem;
+  }
 }
 header .title_container i {
   font-size: 3rem;
@@ -50,6 +81,11 @@ header .mini_header {
   margin: 80px auto 0px auto;
   width: 70%;
   background-color: rgba(255, 255, 255, 0.4);
+}
+@media screen and (max-width: 800px) {
+  header .mini_header {
+    grid-template-columns: 100%;
+  }
 }
 header .mini_header ul {
   display: -webkit-box;
@@ -68,21 +104,14 @@ header .mini_header ul li {
   letter-spacing: 2px;
   font-size: 0.9rem;
 }
+@media screen and (max-width: 530px) {
+  header .mini_header ul li {
+    font-size: 0.6rem;
+  }
+}
 header .mini_header ul #first {
   color: rgb(10, 10, 10);
   position: relative;
-}
-header .mini_header ul #first::after {
-  content: "";
-  position: absolute;
-  height: 100px;
-  width: 190px;
-  background-color: rgb(226, 226, 226);
-  -webkit-transform: translate(-50% -50%);
-          transform: translate(-50% -50%);
-  top: -30px;
-  left: 0px;
-  z-index: -1;
 }
 header .mini_header .logocontainer {
   display: -webkit-box;
@@ -94,6 +123,11 @@ header .mini_header .logocontainer {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   font-size: 1.5rem;
+}
+@media screen and (max-width: 800px) {
+  header .mini_header .logocontainer {
+    display: none;
+  }
 }
 
 button {
@@ -128,28 +162,6 @@ button {
   margin: 70px auto;
   position: relative;
 }
-.topic1 #date::before {
-  content: "";
-  height: 1px;
-  width: 300px;
-  background-color: rgb(219, 219, 219);
-  position: absolute;
-  -webkit-transform: translate(-50% -50%);
-          transform: translate(-50% -50%);
-  top: 50%;
-  left: -400px;
-}
-.topic1 #date::after {
-  content: "";
-  height: 1px;
-  width: 300px;
-  background-color: rgb(219, 219, 219);
-  position: absolute;
-  -webkit-transform: translate(-50% -50%);
-          transform: translate(-50% -50%);
-  top: 50%;
-  left: 200px;
-}
 .topic1 h2 {
   font-family: Inter;
   text-transform: uppercase;
@@ -181,6 +193,17 @@ button {
   position: relative;
   text-align: center;
 }
+@media screen and (max-width: 1150px) {
+  .topics {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.topics #second_date {
+  font-family: Light;
+}
 .topics #second_date::before {
   content: "";
   height: 1px;
@@ -192,16 +215,8 @@ button {
   top: -30px;
   left: 0;
 }
-.topics #second_date::after {
-  content: "";
-  height: 100%;
-  width: 1px;
-  background-color: rgb(219, 219, 219);
-  position: absolute;
-  -webkit-transform: translate(-50% -50%);
-          transform: translate(-50% -50%);
-  top: -30px;
-  left: 50%;
+.topics #third_date {
+  font-family: Light;
 }
 .topics .blog2, .topics .blog3 {
   display: -webkit-box;
@@ -244,6 +259,11 @@ footer {
   grid-template-columns: 50% 50%;
   position: relative;
 }
+@media screen and (max-width: 1150px) {
+  footer {
+    grid-template-columns: 100%;
+  }
+}
 footer .formulaire {
   display: grid;
   margin: 50px;
@@ -270,13 +290,19 @@ footer .formulaire textarea {
   resize: none;
 }
 footer .formulaire button {
-  width: 40%;
+  width: 50%;
   margin-top: 20px;
   background-color: transparent;
-  border: 1px solid rgb(168, 168, 168);
+  border: 2px solid rgb(10, 10, 10);
   border-radius: 5px;
   height: 50px;
   color: rgb(83, 83, 83);
+}
+@media screen and (max-width: 1150px) {
+  footer .formulaire button {
+    font-size: 0.7rem;
+    width: 70%;
+  }
 }
 footer .contact {
   text-transform: uppercase;
@@ -290,6 +316,11 @@ footer .contact .address, footer .contact .phone, footer .contact .mail {
   grid-template-columns: 30% 70%;
   margin: 50px;
 }
+@media screen and (max-width: 530px) {
+  footer .contact .address, footer .contact .phone, footer .contact .mail {
+    display: block;
+  }
+}
 footer .contact .address p, footer .contact .mail p {
   text-transform: none;
 }
@@ -297,10 +328,20 @@ footer .contact h4 {
   font-family: Inter;
   font-size: 0.9rem;
 }
+@media screen and (max-width: 530px) {
+  footer .contact h4 {
+    margin-bottom: 20px;
+  }
+}
 footer .contact p {
   font-family: Light;
   width: 70%;
   font-size: 0.8rem;
+}
+@media screen and (max-width: 530px) {
+  footer .contact p {
+    width: 100%;
+  }
 }
 footer .contact .socials {
   display: grid;
@@ -310,6 +351,11 @@ footer .contact .socials {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 460px) {
+  footer .contact .socials {
+    display: block;
+  }
+}
 footer .contact .socials i {
   border: 1px solid rgb(83, 83, 83);
   height: 40px;
@@ -317,6 +363,14 @@ footer .contact .socials i {
   padding: 10px;
   border-radius: 40px;
   text-align: center;
+}
+@media screen and (max-width: 530px) {
+  footer .contact .socials i {
+    font-size: 0.5rem;
+    height: 30px;
+    width: 30px;
+    margin-top: -20px;
+  }
 }
 
 * {

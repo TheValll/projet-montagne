@@ -12,27 +12,27 @@
         margin: 70px auto;
         position: relative;
 
-        &::before{
-            content: "";
-            height: 1px;
-            width: 300px;
-            background-color: $color3;
-            position: absolute;
-            transform: translate(-50% -50%);
-            top: 50%;
-            left: -400px;
-        }
+        // &::before{
+        //     content: "";
+        //     height: 1px;
+        //     width: 300px;
+        //     background-color: $color3;
+        //     position: absolute;
+        //     transform: translate(-50% -50%);
+        //     top: 50%;
+        //     left: -400px;
+        // }
 
-        &::after{
-            content: "";
-            height: 1px;
-            width: 300px;
-            background-color: $color3;
-            position: absolute;
-            transform: translate(-50% -50%);
-            top: 50%;
-            left: 200px;
-        }
+        // &::after{
+        //     content: "";
+        //     height: 1px;
+        //     width: 300px;
+        //     background-color: $color3;
+        //     position: absolute;
+        //     transform: translate(-50% -50%);
+        //     top: 50%;
+        //     left: 200px;
+        // }
     }
 
     h2{

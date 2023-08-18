@@ -5,7 +5,15 @@ header{
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding-top: 150px;
+       
+
+        @media screen and (max-width: 1150px){
+            padding-top: 300px;
+        }
+
+        @media screen and (max-width: 690px){
+            padding-top: 50px;
+        }
 
         h1{
             text-transform: uppercase;
@@ -15,6 +23,16 @@ header{
             margin: 15px auto;
             line-height: 90px;
             font-family: Inter;
+
+            @media screen and (max-width: 1150px){
+                font-size: 3rem;
+                line-height: 60px;
+            }
+
+            @media screen and (max-width: 690px){
+                font-size: 2rem;
+                line-height: 40px;
+            }
         }
 
         p{
@@ -22,6 +40,14 @@ header{
             font-family: Light;
             font-style: italic;
             letter-spacing: 2px;
+
+            @media screen and (max-width: 1150px){
+                font-size: 0.8rem;
+            }
+
+            @media screen and (max-width: 690px){
+                font-size: 0.6rem;
+            }
         }
 
         i{
@@ -42,6 +68,10 @@ header{
         width: 70%;
         background-color: rgba(255, 255, 255, 0.400);
 
+        @media screen and (max-width: 800px){
+            grid-template-columns: 100%;
+        }
+
         ul{
             display: flex;
             align-items: center;
@@ -54,23 +84,27 @@ header{
                 padding: 10px;
                 letter-spacing: 2px;
                 font-size: 0.9rem;
+
+                @media screen and (max-width: 530px){
+                    font-size: 0.6rem;
+                }
             }
 
             #first{
                 color: $color2;
                 position: relative;
                 
-                &::after{
-                    content: "";
-                    position: absolute;
-                    height: 100px;
-                    width: 190px;
-                    background-color: rgb(226, 226, 226);
-                    transform: translate(-50% -50%);
-                    top: -30px;
-                    left: 0px;
-                    z-index: -1;
-                }
+                // &::after{
+                //     content: "";
+                //     position: absolute;
+                //     height: 100px;
+                //     width: 190px;
+                //     background-color: rgb(226, 226, 226);
+                //     transform: translate(-50% -50%);
+                //     top: -30px;
+                //     left: 0px;
+                //     z-index: -1;
+                // }
             }
             
         }
@@ -80,6 +114,10 @@ header{
             align-items: center;
             justify-content: space-around;
             font-size: 1.5rem;
+
+            @media screen and (max-width: 800px){
+                display: none;
+            }
         }
     }
 }

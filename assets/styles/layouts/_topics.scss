@@ -6,8 +6,14 @@
     position: relative;
     text-align: center;
 
+    @media screen and (max-width: 1150px){
+        flex-direction: column;
+    }
+
     #second_date{
 
+        font-family: Light;
+        
         &::before{
             content: "";
             height: 1px;
@@ -19,16 +25,20 @@
             left: 0;
         }
 
-        &::after{
-            content: "";
-            height: 100%;
-            width: 1px;
-            background-color: $color3;
-            position: absolute;
-            transform: translate(-50% -50%);
-            top: -30px;
-            left: 50%;
-        }
+        // &::after{
+        //     content: "";
+        //     height: 100%;
+        //     width: 1px;
+        //     background-color: $color3;
+        //     position: absolute;
+        //     transform: translate(-50% -50%);
+        //     top: -30px;
+        //     left: 50%;
+        // }
+    }
+
+    #third_date{
+        font-family: Light;
     }
 
     .blog2,.blog3{
