@@ -1,0 +1,95 @@
+footer{
+    background-color: $color3;
+    width: 70%;
+    margin: 20px auto 50px auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+
+    .formulaire{
+        display: grid;
+        margin: 50px;
+
+        label{
+            display: block;
+            margin: 10px auto;
+            font-family: Inter;
+            color: rgb(83, 83, 83);
+            font-size: 0.9rem;
+        }
+
+        input{
+            width: 90%;
+            background-color: transparent;
+            border: 1px solid rgb(168, 168, 168);
+            border-radius: 5px;
+            height: 50px;
+        }
+
+        textarea{
+            width: 90%;
+            background-color: transparent;
+            border: 1px solid rgb(168, 168, 168);
+            border-radius: 5px;
+            resize: none;
+        }
+
+        button{
+            width: 40%;
+            margin-top: 20px;
+            background-color: transparent;
+            border: 1px solid rgb(168, 168, 168);
+            border-radius: 5px;
+            height: 50px;
+            color: rgb(83, 83, 83);
+        }
+    }
+
+    .contact{
+        text-transform: uppercase;
+        color: rgb(83, 83, 83);
+        display: grid;
+        grid-template-rows: 25% 25% 25% 25%;
+        margin-bottom: 40px;
+
+        .address,.phone,.mail{
+            display: grid;
+            grid-template-columns: 30% 70%;
+            margin: 50px;
+        }
+
+        .address,.mail{
+            
+            p{
+                text-transform: none;
+            }
+        }
+
+        h4{
+            font-family: Inter;
+            font-size: 0.9rem;
+        }
+
+        p{
+            font-family: Light;
+            width: 70%;
+            font-size: 0.8rem;
+        }
+
+        .socials {
+            display: grid;
+            grid-template-columns: 30% 17% 17% 17% 17%;
+            margin: 50px;
+            align-items: center;
+
+            i{
+                border: 1px solid rgb(83, 83, 83);
+                height: 40px;
+                width: 40px;
+                padding: 10px;
+                border-radius: 40px;
+                text-align: center;
+            }
+        }
+    }
+}
